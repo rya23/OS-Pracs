@@ -1,6 +1,6 @@
 #include <bits\stdc++.h>
 using namespace std;
-int disk_size = 200;
+int disk_size = 199;
 int fcfs(vector<int> &values, int head)
 {
     int seek = 0;
@@ -74,8 +74,8 @@ int cscan(vector<int> &values, int head)
 
 int main()
 {
-    vector<int> values = {176, 79, 34, 60, 92, 11, 41, 114};
-    int head = 50;
+    vector<int> values = {55, 58, 39, 18, 90, 160, 150, 38, 184};
+    int head = 100;
     cout << "Seek Time by fcfs is : " << fcfs(values, head) << endl;
     cout << "Seek Time by Scan is : " << scan(values, head) << endl;
     cout << "Seek Time by CScan is : " << cscan(values, head);
