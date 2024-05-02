@@ -30,6 +30,7 @@ int fifo(vector<int> &pages, int capacity)
                 index.pop();
                 s.erase(value);
                 s.insert(pages[i]);
+                index.push(pages[i]);
                 pagefaults++;
             }
         }
